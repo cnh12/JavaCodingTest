@@ -24,12 +24,12 @@ class Main {
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
         arr = new String[N][M];
-        Queue<Point> queue = new LinkedList();
+        Queue<Point> queue = new LinkedList<>();
 
 
         for (int i = 0; i < N; i++) {
             String input = br.readLine();
-            for (int j = 0; j < N; j++) {
+            for (int j = 0; j < M; j++) {
                 arr[i][j] = input.charAt(j)+"";
                 if(arr[i][j].equals("@")){
                     queue.add(new Point(i, j, -1));
