@@ -72,5 +72,6 @@ class Main {
         if(scoreList.size()>0 && scoreList.get(scoreList.size()-1)<0) System.out.println(0);
         else if(scoreList.size()>0) System.out.println(scoreList.get(scoreList.size()-1));
         else System.out.println(0);
+                
     }
 }
