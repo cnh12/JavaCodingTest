@@ -36,7 +36,6 @@ class Main {
             }
         }
 
-
         while (!queue.isEmpty()){
             Point point = queue.poll();
 
