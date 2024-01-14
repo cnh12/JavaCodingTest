@@ -26,7 +26,6 @@ class Main {
         arr = new String[N][M];
         Queue<Point> queue = new LinkedList<>();
 
-
         for (int i = 0; i < N; i++) {
             String input = br.readLine();
             for (int j = 0; j < M; j++) {
