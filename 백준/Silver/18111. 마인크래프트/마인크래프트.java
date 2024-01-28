@@ -64,6 +64,7 @@ class Main {
                 }
 
                 //이미 최소시간보다 큰 시간인 경우 탐색 중지
+                //여기서 >=을 하면 안 됨. 왜냐면 시간이 같고 높이가 높은 경우 정답이 될 수 있으니까. 큰 경우에만 탐색 중지.
                 if(curTime > minTime){
                     available = false;
                     break;
@@ -71,7 +72,7 @@ class Main {
 
             }
 
-            //cur 높이로 평탄화 가능
+            //cur 높이로 평탄화 가능. 시간이 같을 때 높이가 높은 것을 채택해야 함. (문제 잘 보자!!)
             if(minTime >= curTime && available) {
                 minTime = curTime;
                 if(minTimeHeight < cur) minTimeHeight = cur;
